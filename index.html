@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+    <title>AluraGeeK</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <img src="./assets/Logo.svg" alt="logo alurageek" />
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="main-container">
+
+        <!-- Sección Mostrar productos -->
+        <section class="product-section">
+            <h1>MIS PRODUCTOS:</h1> <!-- Productos se renderizarán aquí --> 
+ 
+            <div data-product class="products-container"></div> 
+             <div id="product-container" class="product-container">
+            <!-- <p class="no-products-message">No se han agregado productos.</p>--> 
+            </div>
+        </section>
+
+        <!-- Sección Agregar productos -->
+        <section class="add-product-section">
+            <h1>AGREGAR PRODUCTO:</h1>
+
+            <!-- Formulario Agregar productos -->
+            <form class="form-container" data-formulario>
+                <input name="nombre" placeholder="Inserte el nombre" type="text" data-nombre>
+                <input data-precio placeholder="Inserte el precio" type="text">
+                <input data-imagen placeholder="Inserte la url de la imagen" type="text">
+                <div class="button-container">
+                    <button type="submit" class="button-submit" id="button"> Enviar</button>
+                    <button type="reset" class="button-clear" id="button">Limpiar</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-container">
+        <div>
+            <img src="./assets/Logo.svg" />
+        </div>
+        <p> Desarollado por CaroZTSDWeb</p>
+        <small>Challenge de Alura Latam 2024</small>
+    </footer>
+
+    <script type="module" src="./js/mostrarProductos.js"></script>
+    <script type="module" src="./js/agregarProducto.js"></script>
+    <script type="module" src="./js/eliminarProducto.js"></script>
+   
+</body>
+</html>
+
+
+
