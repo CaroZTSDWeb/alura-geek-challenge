@@ -30,13 +30,13 @@
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/alurageek.git
+   git clone https://github.com/CaroZTSDWeb/alura-geek-challenge.git
    ```
 
 2. Navega al directorio del proyecto:
 
    ```bash
-   cd alurageek
+   cd alura-geek-challenge
    ```
 
 3. Instala las dependencias:
@@ -58,8 +58,7 @@
 - **index.html**: Estructura de la aplicación.
 - **styles/reset.css**: Reinicio de estilos.
 - **styles/style.css**: Estilos personalizados.
-- **js/controllers/main.js**: Lógica de agregar y eliminar productos.
-- **js/services/product-services.js**: Solicitudes HTTP (GET, POST, DELETE).
+- **js/**: Lógica de conexion, mostrar, agregar y eliminar productos.
 - **db.json**: Base de datos simulada para **json-server**.
 - **package.json**: Dependencias y scripts.
 
@@ -67,9 +66,9 @@
 
 **json-server** simula una API RESTful con las siguientes rutas:
 
-- `GET /products`: Lista los productos.
-- `POST /products`: Crea un nuevo producto.
-- `DELETE /products/:id`: Elimina un producto.
+- `GET /productos`: Lista los productos.
+- `POST /productos`: Crea un nuevo producto.
+- `DELETE /productos/:id`: Elimina un producto.
 
 ## 📋 Uso de la Aplicación
 
